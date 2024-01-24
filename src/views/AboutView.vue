@@ -5,7 +5,8 @@ export default {
   data() {
     return {
       section: {
-        image: "https://d3g5ywftkpzr0e.cloudfront.net/wp-content/uploads/2023/07/13220529/Artificial-Intelligence-in-Indonesia-The-current-state-and-its-opportunities.jpeg",
+        image:
+          "https://d3g5ywftkpzr0e.cloudfront.net/wp-content/uploads/2023/07/13220529/Artificial-Intelligence-in-Indonesia-The-current-state-and-its-opportunities.jpeg",
         text: "This project is for educational use. All text about the national park has been generated with AI.",
       },
       totalLikes: 0,
