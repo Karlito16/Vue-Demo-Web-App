@@ -1,15 +1,37 @@
+<script>
+import Section from "../components/Section.vue";
+
+export default {
+  data() {
+    return {
+      section: {
+        image: "https://d3g5ywftkpzr0e.cloudfront.net/wp-content/uploads/2023/07/13220529/Artificial-Intelligence-in-Indonesia-The-current-state-and-its-opportunities.jpeg",
+        text: "This project is for educational use. All text about the national park has been generated with AI.",
+      },
+      totalLikes: 0,
+    };
+  },
+  components: {
+    Section,
+  },
+  methods: {
+    updateLikes(likes) {
+      this.totalLikes += likes;
+    },
+  },
+};
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <Section
+      :section="section"
+      :total-likes="totalLikes"
+      @liked="updateLikes"
+    />
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
+<style scoped>
+/* Add your styling here, if needed */
 </style>
